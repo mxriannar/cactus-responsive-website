@@ -198,6 +198,20 @@ img {
     right: 0;
 }
 
+/* add blur header */
+.blur-header::after {
+    content: '';
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    background-color: hsla(228, 24%, 6%, .2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 /* home */
 .home__container {
     padding-top: 2.5rem;
@@ -321,3 +335,4 @@ img {
 .news__card:hover .news__img {
     transform: translateY(-.5rem);
 }
+
